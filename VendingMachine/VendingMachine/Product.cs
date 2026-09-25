@@ -19,6 +19,7 @@ namespace VendingMachine
         public int Price { get { return _price; } }
         public int Stock { get { return _stock; } }
         public ProductCategory Category { get { return _category; } }
+        public bool IsAvailable { get { return _stock > 0; } }
         public Product(string code, string name, int price, int stock, ProductCategory category)
         {
             _code = code;
