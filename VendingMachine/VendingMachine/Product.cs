@@ -19,6 +19,13 @@ namespace VendingMachine
         public int Price { get { return _price; } }
         public int Stock { get { return _stock; } }
         public ProductCategory Category { get { return _category; } }
-
+        public Product(string code, string name, int price, int stock, ProductCategory category)
+        {
+            _code = code;
+            _name = name;
+            _price = price;
+            _stock = stock;
+            _category = category;
+        }
     }
 }
