@@ -27,5 +27,9 @@ namespace VendingMachine
             _stock = stock;
             _category = category;
         }
+        public void Sell()
+        {
+            _stock--;
+        }
     }
 }
